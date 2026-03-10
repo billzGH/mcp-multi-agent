@@ -1,0 +1,64 @@
+name: Question / Help
+description: Ask a question about multi-agent patterns or using the examples
+title: "[QUESTION] "
+labels: ["question"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Need help? Ask your question below!
+
+  - type: textarea
+    id: question
+    attributes:
+      label: Question
+      description: What would you like help with?
+      placeholder: Describe your question or what you're trying to accomplish
+    validations:
+      required: true
+
+  - type: textarea
+    id: what-tried
+    attributes:
+      label: What I've Tried
+      description: What have you already attempted?
+      placeholder: Describe what you've tried so far
+    validations:
+      required: true
+
+  - type: input
+    id: os
+    attributes:
+      label: Operating System
+      description: If relevant
+      placeholder: macOS 14.1
+
+  - type: input
+    id: python-version
+    attributes:
+      label: Python Version
+      description: If relevant
+      placeholder: "3.12.0"
+
+  - type: input
+    id: component
+    attributes:
+      label: Component / Example
+      description: Which agent server or example is this related to?
+      placeholder: monitor-agent, engineer-agent, spike, etc.
+
+  - type: textarea
+    id: code-config
+    attributes:
+      label: Code/Configuration (if relevant)
+      description: Share any relevant code or Claude Desktop config
+      render: python
+      placeholder: |
+        # Paste relevant code here
+
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: Additional Context
+      description: Any other information that might be helpful
+      placeholder: Any additional details

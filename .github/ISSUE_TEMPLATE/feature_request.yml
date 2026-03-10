@@ -1,0 +1,81 @@
+name: Feature Request
+description: Suggest a new example, coordination pattern, or project feature
+title: "[FEATURE] "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for suggesting a new feature! Please provide details below.
+
+  - type: checkboxes
+    id: feature-type
+    attributes:
+      label: Feature Type
+      description: What kind of feature are you requesting?
+      options:
+        - label: New agent server example
+        - label: New coordination pattern
+        - label: Enhancement to existing example
+        - label: Documentation improvement
+        - label: New phase / learning track
+        - label: Other
+
+  - type: textarea
+    id: feature-description
+    attributes:
+      label: Feature Description
+      description: A clear and concise description of what you want
+      placeholder: Describe the feature you'd like to see
+    validations:
+      required: true
+
+  - type: textarea
+    id: use-case
+    attributes:
+      label: Use Case
+      description: Describe the problem this feature would solve or the multi-agent workflow it would enable
+      placeholder: What coordination challenge does this solve? How would agents interact?
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposed-solution
+    attributes:
+      label: Proposed Solution
+      description: How do you envision this working? Which agents would be involved?
+      placeholder: Describe your ideal implementation
+    validations:
+      required: true
+
+  - type: textarea
+    id: example-code
+    attributes:
+      label: Example Code/Configuration
+      description: If applicable, provide pseudo-code or Claude Desktop config examples
+      render: python
+      placeholder: |
+        # Your example here
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives Considered
+      description: What other approaches have you thought about?
+      placeholder: Describe alternative approaches
+
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: Additional Context
+      description: Add any other context, screenshots, or links
+      placeholder: Any additional information
+
+  - type: checkboxes
+    id: contribution
+    attributes:
+      label: Would you be willing to contribute?
+      options:
+        - label: Yes, I can submit a PR for this
+        - label: Maybe, with guidance
+        - label: No, but I can help test

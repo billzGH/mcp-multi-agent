@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 📚 MCP Documentation
+    url: https://modelcontextprotocol.io/docs
+    about: Official Model Context Protocol documentation
+  - name: 🚀 mcp-agentic-starter
+    url: https://github.com/billzGH/mcp-agentic-starter
+    about: New to MCP? Start here before diving into multi-agent patterns
+  - name: 💬 Anthropic Discord
+    url: https://discord.gg/anthropic
+    about: Join the Anthropic Discord for real-time help

@@ -1,0 +1,25 @@
+{
+  "_readme": "Copy this file to ~/Library/Application Support/Claude/claude_desktop_config.json (Mac) or %APPDATA%\\Claude\\claude_desktop_config.json (Windows). Replace /absolute/path/to with the actual path to this repo on your machine. Configure both servers to test Claude Desktop orchestration — that is the point of the Phase 0 spike.",
+  "mcpServers": {
+    "monitor-agent": {
+      "_readme": "Detects anomalies in the sample dataset. Part of the Phase 0 coordination spike.",
+      "command": "uv",
+      "args": [
+        "run",
+        "--directory",
+        "/absolute/path/to/mcp-multi-agent/spike/monitor-agent",
+        "server.py"
+      ]
+    },
+    "engineer-agent": {
+      "_readme": "Investigates anomalies detected by monitor-agent. Configure alongside monitor-agent to test Claude Desktop coordination.",
+      "command": "uv",
+      "args": [
+        "run",
+        "--directory",
+        "/absolute/path/to/mcp-multi-agent/spike/engineer-agent",
+        "server.py"
+      ]
+    }
+  }
+}
