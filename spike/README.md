@@ -10,7 +10,7 @@ without any custom orchestration code?**
 Two agents, one job:
 
 | Agent | Role | Tools |
-|---|---|---|
+| --- | --- | --- |
 | `monitor-agent` | Detects data anomalies | `check_data_health`, `list_anomalies`, `get_summary` |
 | `engineer-agent` | Investigates anomalies | `investigate_anomaly`, `get_details`, `suggest_fix` |
 
