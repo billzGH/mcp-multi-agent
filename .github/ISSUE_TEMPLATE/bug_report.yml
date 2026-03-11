@@ -60,6 +60,13 @@ body:
     validations:
       required: true
 
+  - type: textarea
+    id: proposed-fix
+    attributes:
+      label: Proposed Fix
+      description: If you have a suggested fix or direction, describe it here
+      placeholder: Describe how you think this could be fixed
+
   - type: input
     id: os
     attributes:
