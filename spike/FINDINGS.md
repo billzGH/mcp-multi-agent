@@ -12,8 +12,6 @@
 
 ## Results
 
-## Results
-
 **Yes — Claude Desktop successfully orchestrated both agents without any custom code.**
 
 1. **Did Claude orchestrate naturally?** Yes — unprompted, correct order every time.
